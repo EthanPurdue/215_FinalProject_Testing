@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Cars Database</title>
+    <script src="./lib/jquery-3.7.1.js"></script>
+    <script src="info.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Available Cars</h1>
+    <!--Nav Bar is only here to look more professional, as I can only use one web page, it will reload the page if clicked though-->
+    <div class="navbar">
+        <!--I originally made these buttons' onclick events be handled in javascript and that caused a lot of problems before I found a solution
+        It would call functions multiple times which didn't affect 'createContent' because additional submit button is required to make changes
+        but it took my an incredibly long time to figure out why toggle function was getting called 4 times-->
+        <!--Takeaway is that statically created buttons with dynamic handlers are vulnerable to errors-->
+        <button class = "createCar" onclick = "createContent()">Add Car</button>
+        <button class = "toggleActivity" onclick = "toggleUserActivity()">Toggle Activity</button>
+        <button class = "filter" onclick = "filterContent()">Filter</button>
+
+    </div>
+    <!--parentsContainer contains EVERYTHING as name implies-->
+    <!--There may only end up being carsWrapper inside of it, but if i want to add more it's flexible to do so -->
+    <div class = "parentContainer">
+        <div class = "activityContainer">
+            <h2>Activity History</h2>
+            <div class = listItems></div>
+        </div>
+        <div class = "carsWrapper"></div>
+    </div>
+</body>
+</html>
