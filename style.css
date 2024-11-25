@@ -1,0 +1,178 @@
+/* Black: #171717
+Red: #fc2e20
+Gray: #bebebebe */
+
+html {
+    background-color: #171717;
+}
+
+.parentContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.carsWrapper {
+    background-color: #bebebebe;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;        
+    width: 95%;                 
+    max-width: 1200px;          
+    height: 80%;               
+    border: 10px solid #fc2e20;
+    margin: 5% auto;            
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5%;
+
+}
+
+h1 {
+    width: 100%;
+    background-color: #bebebebe;
+    color: whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    box-shadow: 5px 5px 5px #fc2e20;
+    border-radius: 15%;
+}
+
+h2 {
+    width: 100%;
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    box-shadow: 5px 5px 5px #fc2e20;
+    border-radius: 15%;
+}
+
+.navbar {
+    height: 60px;
+    font-size: large;
+    display: flex; 
+    background-color: #bebebebe; 
+    box-shadow: 4px 4px 4px #fc2e20;
+    justify-content: space-between; 
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navbar button {
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+}
+
+.activityContainer {
+    background-color: #bebebebe;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;        
+    width: 85%;                 
+    max-width: 1200px;          
+    height: 80%;               
+    /* border: 10px solid #2898D7; */
+    margin: 20px; 
+    margin-left: 8%;           
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+.userActivity {
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+}
+
+.listItems {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.carCard {
+    border-top-right-radius: 22%;
+    border-bottom-left-radius: 22%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #fc2e20;
+    margin: 30px;
+    align-items: center;
+    padding: 15px;
+    background-color: #eeede7;
+    transition: all 0.5s ease;
+    max-width: 350px;
+}
+
+
+.carImage img{
+    border: 4px solid #fc2e20;
+    height: 200px;
+    width: 225px;
+    transition: all 1.2s ease;
+    border-top-right-radius: 22%;
+    border-bottom-left-radius: 22%;
+}
+
+.nameLine {
+    margin: 2%;
+    font-size: 50px;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.infoBar {
+    text-align: center;
+    align-items: center; 
+    align-items: center;
+    width: 350px;
+}
+
+.infoBarContent {
+    margin: 20px;
+    font-size: large;
+    width: 85%;
+    margin-left: 7%;
+}
+
+
+.infoBar button {
+    height: 35px;
+    width: 165px;
+    margin: 10px;
+}
+
+.buttonBar {
+    display:flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 350px;
+    justify-content: center;
+}
+
+.userSubmitButton {
+    height: 35px;
+    width: 165px;
+    margin: 15px;
+}
+
+button {
+    height: 50px;
+    width: 135px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+
+
+
